@@ -12,15 +12,28 @@ library("shinyjs")
 
 appCSS <- "
 #loading-content {
-  position: absolute;
-  background: #ffffff;
-  opacity: 0.9;
-  z-index: 100;
-  left: 0;
-  right: 0;
-  height: 90%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
   text-align: center;
-  color: #000000;
+  color: #495057;
+}
+#loading-content h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+#loading-content img {
+  max-width: 100%;
+  height: auto;
 }
 "
 
