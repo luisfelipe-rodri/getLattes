@@ -7,7 +7,6 @@ library("writexl")
 library("DT")
 library("purrr")
 library("shinydashboard")
-library("waiter")
 library("shinyjs")
 
 appCSS <- "
