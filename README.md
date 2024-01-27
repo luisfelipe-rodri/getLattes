@@ -6,4 +6,4 @@ The Lattes curriculum can be downloaded in XML format from the institution's [we
 
 The application allows the submission of .zip files without the need for unpacking and enables the selection of multiple files at once. Additionally, to meet specific needs and reduce processing costs, it is possible to select only the information desired to be extracted from the resumes. Upon submission, the data will be processed, and the loaded resumes will be displayed for download.
 
-![](https://github.com/luisfelipe-rodri/getLattes/blob/main/demo.gif)
+![]([https://github.com/luisfelipe-rodri/getLattes/blob/main/demo.gif](https://github.com/luisfelipe-rodri/getLattes/blob/main/demo.gif)https://github.com/luisfelipe-rodri/getLattes/blob/main/demo.gif)
