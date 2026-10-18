@@ -5,5 +5,3 @@ The [application](https://luisfeliperodrigues.shinyapps.io/getLattes/) aims to s
 The Lattes curriculum can be downloaded in XML format from the institution's [website](https://lattes.cnpq.br/), and the complexity of this reading process motivated the development of the getLattes package. This package imports information from XML files into a list in the R software and then tabulates the Lattes data so that it can be downloaded as .xlsx format.
 
 The application allows the submission of .zip files without the need for unpacking and enables the selection of multiple files at once. Additionally, to meet specific needs and reduce processing costs, it is possible to select only the information desired to be extracted from the resumes. Upon submission, the data will be processed, and the loaded resumes will be displayed for download.
-
-![](https://giphy.com/embed/LcCZDrbLKJGZk1WoVL)
