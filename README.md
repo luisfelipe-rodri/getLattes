@@ -60,52 +60,6 @@ Com ele é possível, por exemplo:
 
 Além disso, os **dados gerais** de cada pesquisador são sempre exportados, e o identificador de 16 dígitos do Lattes (`id`) permite cruzar as tabelas entre si.
 
-### Executar localmente
-
-Requisitos: R (≥ 4.1, pelo uso do operador `|>`) e os pacotes abaixo.
-
-```r
-install.packages(c(
-  "shiny", "bslib", "shinyjs", "DT",
-  "dplyr", "purrr", "xml2", "writexl",
-  "getLattes"
-))
-```
-
-Depois, na pasta do projeto:
-
-```bash
-Rscript -e 'shiny::runApp("app.R", port = 3838, launch.browser = TRUE)'
-```
-
-O app abrirá em `http://127.0.0.1:3838`. Para acessá-lo a partir de outra máquina da rede, acrescente `host = "0.0.0.0"` à chamada de `runApp()`.
-
-No Debian/Ubuntu, a instalação de alguns pacotes pode exigir bibliotecas do sistema:
-
-```bash
-sudo apt install -y r-base r-base-dev build-essential \
-  libcurl4-openssl-dev libssl-dev libxml2-dev libfontconfig1-dev \
-  libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev \
-  libtiff5-dev libjpeg-dev
-```
-
-### Publicar no shinyapps.io
-
-Com o pacote `rsconnect` e a conta já autorizada (`rsconnect::setAccountInfo()`):
-
-```r
-rsconnect::deployApp(
-  appDir = ".",
-  appFiles = "app.R",
-  appPrimaryDoc = "app.R",
-  appName = "NOME-DO-APP",
-  account = "SUA-CONTA",
-  forceUpdate = TRUE
-)
-```
-
-Use o mesmo `appName` de um app existente para atualizá-lo no mesmo endereço. Nunca publique tokens, *secrets* ou arquivos com currículos no repositório.
-
 ## O pacote getLattes
 
 O [`getLattes`](https://cran.r-project.org/package=getLattes) importa os dados de currículos Lattes: lê os arquivos XML, converte-os em listas do R e organiza o conteúdo em tabelas. Há funções para áreas de atuação, artigos, livros, capítulos, bancas, orientações, projetos e outras seções.
