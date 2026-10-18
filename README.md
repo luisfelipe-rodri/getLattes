@@ -1,4 +1,4 @@
-# Get Lattes
+# GetLattes
 
 [![CRAN](https://www.r-pkg.org/badges/version/getLattes)](https://cran.r-project.org/package=getLattes)
 [![Shiny App](https://img.shields.io/badge/app-shinyapps.io-1f6f8b)](https://luisfeliperodrigues.shinyapps.io/getLattes/)
